@@ -1,0 +1,166 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background-color: #ffffff;
+}
+
+.topnav {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 50;
+}
+
+.topnav a {
+    float: right;
+    color: #bdc3c7;
+    text-align: center;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 24px;
+}
+
+.topnav a:hover {
+    color: #ecf0f1;
+}
+
+.titlebackground {
+    width: 100vw;
+    height: 76vh;
+    background-color: #2c3e50;
+    display: block;
+}
+
+.title {
+    margin: 0;
+    padding-top: 300px;
+    padding-bottom: 5%;
+    padding-left: 25%;
+    padding-right: auto;
+    text-align: left;
+}
+
+.name {
+    color: #ecf0f1;
+    display: inline;
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 64px;
+}
+
+#username {
+    color: #f1c40f;
+    font-weight: 700;
+}
+
+.description {
+    color: #bdc3c7;
+    display: inline;
+    margin-top: 0;
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 48px;
+}
+
+#highlight {
+    display: inline;
+    color: #3498db;
+}
+
+.hidden {
+    opacity:0;
+}
+
+.console-container {
+    display: inline;
+}
+
+.custom-shape-divider-top-1721065483 {
+    display: block;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    fill: #2c3e50;
+}
+
+.projects {
+    height: 100vh;
+}
+
+.projecttitle, p {
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 48px;
+    color: #2c3e50;
+    text-decoration: underline 4px;
+    text-align: center;
+    padding-top: 5vh;
+}
+
+p {
+    font-size: 24px;
+    text-decoration: none;
+    color: #2980b9;
+}
+
+.custom-shape-divider-bottom-1721073030 {
+    position: relative;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+    fill: #16a085;
+}
+
+.contact {
+    height: 50vh;
+    background-color: #16a085;
+}
+
+.contacttitle, .contactlink {
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 36px;
+    color: #2c3e50;
+    text-align: center;
+    padding-top: 12vh;
+    margin: 0;
+    text-decoration: none;
+}
+
+.contactlink {
+    color: #34495e;
+}
+
+footer {
+    color: #2c3e50;
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 18px;
+    text-align: center;
+    margin: auto;
+    background-color: #16a085;
+}
