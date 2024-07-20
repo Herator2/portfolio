@@ -99,7 +99,7 @@ body {
 }
 
 .projects {
-    height: 100vh;
+    height: 590px;
 }
 
 .projecttitle, p {
@@ -114,10 +114,90 @@ body {
     padding-top: 5vh;
 }
 
-p {
+.projectsgrid {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    /*background-color: #2196F3;*/
+    padding: 20px 2vw;
+    justify-content: space-evenly;
+    gap: 20px 0;
+}
+
+@media screen and (max-width: 1700px) {
+    .projectsgrid {
+        grid-template-columns: auto auto;
+    }
+    .projects {
+        height: 1080px;
+    }
+}
+@media screen and (max-width: 800px) {
+    .projectsgrid {
+        grid-template-columns: auto;
+    }
+    .projects {
+        height: 2160px;
+    }
+}
+
+.project {
+    background-color: #e0e0e0;
+    border-radius: 30px;
+    padding: 0;
+    width: 360px;
+    max-width: 360px;
+    height: 420px;
+    max-height: 420px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.project-title {
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 36px;
+    color: #414141;
+    text-decoration: underline 4px;
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+}
+
+.project-description {
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
     font-size: 24px;
+    color: #353535;
     text-decoration: none;
-    color: #95a5a6;
+    text-align: center;
+    padding: 5px;
+    margin: 0;
+}
+
+.project-button {
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 24px;
+    color: #ffffff;
+    text-decoration: none;
+    text-align: center;
+    background-color: #3498db;
+    padding: 5px 0;
+    margin: 8px 0;
+    border-radius: 7px;
+    justify-self: flex-end;
+    z-index: 5;
+}
+
+#bottomwave {
+    margin-top: 10vh;
 }
 
 .contact {
@@ -139,7 +219,7 @@ p {
 }
 
 .contactlink {
-    color: #643861;
+    color: #444444;
 }
 
 footer {
