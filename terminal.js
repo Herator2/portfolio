@@ -2,7 +2,7 @@
 // Adapted from https://codepen.io/Tbgse/pen/dYaJyJ
 // Orginally by Tobias
 
-consoleText(['A Web Developer.', 'A Linux Nerd.', "A Rasberry Pi Fan.", "A College Student.", 'A Python Programmer.', "A Low Level Learner"], 'text',['#1abc9c','#2ecc71','#3498db','#e67e22','#e74c3c', "#9b59b6"]);
+consoleText(['A Web Developer.', 'A Linux Nerd.', "A Rasberry Pi Fan.", "A College Student.", 'A Python Programmer.', "A Low Level Learner"], 'text',['#414141']);
 
 function consoleText(words, id, colors) {
   if (colors === undefined) colors = ['#fff'];
