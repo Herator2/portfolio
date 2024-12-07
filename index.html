@@ -2,131 +2,56 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
     
+    
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>About Me</title>
+    <title>Portfolio</title>
   </head>
   <body>
-    <div class="topnav">
-      <a href="#contact">Contact</a>
-      <a href="#projects">Projects</a>
-      <a href="#about">About</a>
+    <div class="title">
+      <h1>Hey, i'm <span id="name">Alex</span></h1>
+      <h2 id="name-caption">A programmer from the UK</h2>
     </div>
-    <div class="titlebackground" id="about">
-      <div class="title">
-        <h1 class="name">
-          Hey, I'm
-          <h1 class="name" id="username">
-            Herator2
-          </h1>
-        </h1>
-        <br>
-        <h1 class="description">
-          $ <div class='console-container'>
-            <span id='text'></span>
-          </div>
-        </h1>
-        <script src="terminal.js"></script>
-      </div>
-    </div>
-    <div class="divider">
-      <svg id="visual" viewBox="0 0 2000 250" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
-        <path d="M0 227L47.7 215.3C95.3 203.7 190.7 180.3 285.8 172.2C381 164 476 171 571.2 178C666.3 185 761.7 192 857 200.8C952.3 209.7 1047.7 220.3 1143 222.8C1238.3 225.3 1333.7 219.7 1428.8 213.8C1524 208 1619 202 1714.2 194.3C1809.3 186.7 1904.7 177.3 1952.3 172.7L2000 168L2000 0L1952.3 0C1904.7 0 1809.3 0 1714.2 0C1619 0 1524 0 1428.8 0C1333.7 0 1238.3 0 1143 0C1047.7 0 952.3 0 857 0C761.7 0 666.3 0 571.2 0C476 0 381 0 285.8 0C190.7 0 95.3 0 47.7 0L0 0Z" fill="#c70039"></path>
-        <path d="M0 190L47.7 182.3C95.3 174.7 190.7 159.3 285.8 148C381 136.7 476 129.3 571.2 128.5C666.3 127.7 761.7 133.3 857 141.8C952.3 150.3 1047.7 161.7 1143 169.7C1238.3 177.7 1333.7 182.3 1428.8 185.7C1524 189 1619 191 1714.2 181.2C1809.3 171.3 1904.7 149.7 1952.3 138.8L2000 128L2000 0L1952.3 0C1904.7 0 1809.3 0 1714.2 0C1619 0 1524 0 1428.8 0C1333.7 0 1238.3 0 1143 0C1047.7 0 952.3 0 857 0C761.7 0 666.3 0 571.2 0C476 0 381 0 285.8 0C190.7 0 95.3 0 47.7 0L0 0Z" fill="#d6333d"></path>
-        <path d="M0 117L47.7 112.3C95.3 107.7 190.7 98.3 285.8 97.2C381 96 476 103 571.2 112.8C666.3 122.7 761.7 135.3 857 131.7C952.3 128 1047.7 108 1143 98C1238.3 88 1333.7 88 1428.8 95.3C1524 102.7 1619 117.3 1714.2 125.3C1809.3 133.3 1904.7 134.7 1952.3 135.3L2000 136L2000 0L1952.3 0C1904.7 0 1809.3 0 1714.2 0C1619 0 1524 0 1428.8 0C1333.7 0 1238.3 0 1143 0C1047.7 0 952.3 0 857 0C761.7 0 666.3 0 571.2 0C476 0 381 0 285.8 0C190.7 0 95.3 0 47.7 0L0 0Z" fill="#e54f42"></path>
-        <path d="M0 57L47.7 65C95.3 73 190.7 89 285.8 98.5C381 108 476 111 571.2 107.7C666.3 104.3 761.7 94.7 857 92C952.3 89.3 1047.7 93.7 1143 89.5C1238.3 85.3 1333.7 72.7 1428.8 67.5C1524 62.3 1619 64.7 1714.2 73.2C1809.3 81.7 1904.7 96.3 1952.3 103.7L2000 111L2000 0L1952.3 0C1904.7 0 1809.3 0 1714.2 0C1619 0 1524 0 1428.8 0C1333.7 0 1238.3 0 1143 0C1047.7 0 952.3 0 857 0C761.7 0 666.3 0 571.2 0C476 0 381 0 285.8 0C190.7 0 95.3 0 47.7 0L0 0Z" fill="#f26848"></path>
-        <path d="M0 40L47.7 45.3C95.3 50.7 190.7 61.3 285.8 59.5C381 57.7 476 43.3 571.2 41C666.3 38.7 761.7 48.3 857 47.8C952.3 47.3 1047.7 36.7 1143 34.2C1238.3 31.7 1333.7 37.3 1428.8 39C1524 40.7 1619 38.3 1714.2 43.5C1809.3 48.7 1904.7 61.3 1952.3 67.7L2000 74L2000 0L1952.3 0C1904.7 0 1809.3 0 1714.2 0C1619 0 1524 0 1428.8 0C1333.7 0 1238.3 0 1143 0C1047.7 0 952.3 0 857 0C761.7 0 666.3 0 571.2 0C476 0 381 0 285.8 0C190.7 0 95.3 0 47.7 0L0 0Z" fill="#ff7f50"></path>
-      </svg>
-    </div>
-    <div class="projects" id="projects">
-      <h1 class="projecttitle">
-        My Public Projects
-      </h1>
-      <div class="projectsgrid">
-        <div class="project">
-          <h1 class="project-title">
-            Sparx Maths Helper
-          </h1>
-          <p class="project-description">
-            Complete your sparx homework quicker and more efficiently. This simple script allows you to quickly store and retreive codes in the least amount of keypresses. Tested for Windows and Linux.
-          </p>
-          <div style="margin: 18px;">
-            <a href="https://github.com/Herator2/Sparx-Maths-Bookwork-Code-Logger/releases/latest/download/main.py" class="project-button">
-              <div class="project-button" style="background-color: #2ecc71;">
-                Download Latest <i class="fa fa-download"></i>
-              </div>
-            </a>
-            <a href="https://github.com/Herator2/Sparx-Maths-Bookwork-Code-Logger" class="project-button">
-              <div class="project-button" style="background-color: #3498db;">
-                View on GitHub <i class="fa fa-github"></i>
-              </div>
-            </a>
-          </div>
+
+    <div id="display-container">
+      <div id="skills-display">
+        <h2 id="skills-title">Technologies</h2>
+        <div id="icon-container">
+          <button class="icon-box stop-skill-rotation" id="rust-box" onclick="setSkill('rust', false)"> <img src="icons/rust-brands-solid.svg" alt="rust" class="large-icons" id="rust" style="filter: drop-shadow(0 0 10px #503628)"/> </button>
+          <button class="icon-box stop-skill-rotation" id="python-box"  onclick="setSkill('python', false)"> <img src="icons/python-brands-solid.svg" alt="python" class="large-icons" id="python" style="filter: drop-shadow(0 0 10px #25324d)"/> </button>
+          <button class="long-icon-box stop-skill-rotation" id="web-box"  onclick="setSkill('web', false)">
+            <img src="icons/html5-brands-solid.svg" alt="html" class="small-icons"/>
+            <img src="icons/css3-alt-brands-solid.svg" alt="css" class="small-icons"/>
+            <img src="icons/square-js-brands-solid.svg" alt="js" class="small-icons"/>
+          </button>
+          <button class="long-icon-box stop-skill-rotation" id="git-box" onclick="setSkill('git', false)">
+            <img src="icons/github-brands-solid.svg" alt="github" class="small-icons"/>
+            <img src="icons/git-alt-brands-solid.svg" alt="git" class="small-icons"/>
+          </button>
+          <button class="long-icon-box stop-skill-rotation" id="linux-box" onclick="setSkill('linux', false)">
+            <img src="icons/fedora-brands-solid.svg" alt="fedora" class="small-icons"/>
+            <img src="icons/docker-brands-solid.svg" alt="docker" class="small-icons"/>
+          </button>
         </div>
-        <div class="project">
-          <h1 class="project-title">
-            This website
-          </h1>
-          <p class="project-description">
-            This website is a large project of mine that is being constantly updated as I learn web development. All code and scripts are open source on GitHub.
-          </p>
-          <div style="margin: 18px;">
-            <a href="https://github.com/Herator2/portfolio" class="project-button">
-              <div class="project-button" style="background-color: #3498db;">
-                View on GitHub <i class="fa fa-github"></i>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="project">
-          <h1 class="project-title">
-            ???
-          </h1>
-          <p class="project-description">
-            Theres nothing here yet...
-          </p>
-          <p></p>
-        </div>
-        <div class="project">
-          <h1 class="project-title">
-            ???
-          </h1>
-          <p class="project-description">
-            Theres nothing here yet...
-          </p>
-          <p></p>
+        <div id="skill-description">
         </div>
       </div>
+      <script src="skills.js"></script>
+      <div id="contents-display">
+        <h2 id="contents-title">Contents</h2>
+        <ul id="contents">
+          <a class="content-link" id="skill-link" href="#skills-display"> - Technologies</a>
+          <a class="content-link" id="qualifications-link" href="#skills-display"> - Qualifications</a>
+          <a class="content-link" id="projects-link" href="#skills-display"> - Projects</a>
+          <a class="content-link" id="contact-link" href="#skills-display"> - Contact</a>
+        </ul>
+      </div>
     </div>
-    <div class="divider" id="bottomwave">
-      <svg id="visual" viewBox="0 0 2000 250" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
-        <path d="M0 50L47.7 61.7C95.3 73.3 190.7 96.7 285.8 98.5C381 100.3 476 80.7 571.2 76.2C666.3 71.7 761.7 82.3 857 94.3C952.3 106.3 1047.7 119.7 1143 118C1238.3 116.3 1333.7 99.7 1428.8 88C1524 76.3 1619 69.7 1714.2 70.5C1809.3 71.3 1904.7 79.7 1952.3 83.8L2000 88L2000 301L1952.3 301C1904.7 301 1809.3 301 1714.2 301C1619 301 1524 301 1428.8 301C1333.7 301 1238.3 301 1143 301C1047.7 301 952.3 301 857 301C761.7 301 666.3 301 571.2 301C476 301 381 301 285.8 301C190.7 301 95.3 301 47.7 301L0 301Z" fill="#009473"></path>
-        <path d="M0 112L47.7 111.3C95.3 110.7 190.7 109.3 285.8 112.5C381 115.7 476 123.3 571.2 134.7C666.3 146 761.7 161 857 160C952.3 159 1047.7 142 1143 130.7C1238.3 119.3 1333.7 113.7 1428.8 108.3C1524 103 1619 98 1714.2 100.5C1809.3 103 1904.7 113 1952.3 118L2000 123L2000 301L1952.3 301C1904.7 301 1809.3 301 1714.2 301C1619 301 1524 301 1428.8 301C1333.7 301 1238.3 301 1143 301C1047.7 301 952.3 301 857 301C761.7 301 666.3 301 571.2 301C476 301 381 301 285.8 301C190.7 301 95.3 301 47.7 301L0 301Z" fill="#00a27a"></path>
-        <path d="M0 140L47.7 141.2C95.3 142.3 190.7 144.7 285.8 151C381 157.3 476 167.7 571.2 170.8C666.3 174 761.7 170 857 163.2C952.3 156.3 1047.7 146.7 1143 142.8C1238.3 139 1333.7 141 1428.8 142.3C1524 143.7 1619 144.3 1714.2 151.2C1809.3 158 1904.7 171 1952.3 177.5L2000 184L2000 301L1952.3 301C1904.7 301 1809.3 301 1714.2 301C1619 301 1524 301 1428.8 301C1333.7 301 1238.3 301 1143 301C1047.7 301 952.3 301 857 301C761.7 301 666.3 301 571.2 301C476 301 381 301 285.8 301C190.7 301 95.3 301 47.7 301L0 301Z" fill="#00b081"></path>
-        <path d="M0 211L47.7 215.5C95.3 220 190.7 229 285.8 232.2C381 235.3 476 232.7 571.2 231C666.3 229.3 761.7 228.7 857 225.2C952.3 221.7 1047.7 215.3 1143 208.8C1238.3 202.3 1333.7 195.7 1428.8 196.3C1524 197 1619 205 1714.2 209.8C1809.3 214.7 1904.7 216.3 1952.3 217.2L2000 218L2000 301L1952.3 301C1904.7 301 1809.3 301 1714.2 301C1619 301 1524 301 1428.8 301C1333.7 301 1238.3 301 1143 301C1047.7 301 952.3 301 857 301C761.7 301 666.3 301 571.2 301C476 301 381 301 285.8 301C190.7 301 95.3 301 47.7 301L0 301Z" fill="#00be88"></path>
-        <path d="M0 274L47.7 269.5C95.3 265 190.7 256 285.8 248.5C381 241 476 235 571.2 233.8C666.3 232.7 761.7 236.3 857 243.5C952.3 250.7 1047.7 261.3 1143 259C1238.3 256.7 1333.7 241.3 1428.8 235.7C1524 230 1619 234 1714.2 241.3C1809.3 248.7 1904.7 259.3 1952.3 264.7L2000 270L2000 301L1952.3 301C1904.7 301 1809.3 301 1714.2 301C1619 301 1524 301 1428.8 301C1333.7 301 1238.3 301 1143 301C1047.7 301 952.3 301 857 301C761.7 301 666.3 301 571.2 301C476 301 381 301 285.8 301C190.7 301 95.3 301 47.7 301L0 301Z" fill="#00cc8e"></path>
-      </svg>
-    </div>
-    <div class="contact" id="contact">
-      <h1 class="contacttitle" style="display: inline-flexbox;">
-        Find me on 
-        <a href="https://github.com/Herator2" class="contactlink">
-          <i style="font-size:36px" class="fa fa-github"></i>
-          GitHub
-        </a>
-        or by Email {
-        <a href="mailto: alex@herator2.dev" class="contactlink">
-          alex@herator2.dev
-        </a>
-        }
-      </h1>
-    </div>
-    <footer>
-      Herator2 © 2024
-    </footer>
+    <footer>Alex Van der Ent © 2024</footer>
   </body>
 </html>
